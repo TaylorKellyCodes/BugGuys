@@ -1,5 +1,5 @@
 ---
-title: "Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO"
+title: "Bug Guys | Sanford, CO"
 description: "Meta description for the page"
 permalink: "/"
 tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
@@ -30,95 +30,146 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 {% block body %}
 
     <!-- ============================================ -->
-    <!--                    Hero                      -->
+    <!--                   Contact                    -->
     <!-- ============================================ -->
 
-    <section id="hero-143">
+    <section id="contact-1750">
         <div class="cs-container">
-            <span class="cs-topper">CodeStitch Presents</span>
-            <h1 class="cs-title">
-                The Intermediate Website Kit (LESS)
-            </h1>
-            <p class="cs-text">
-                Building faster websites, faster. Just clone, update _data/client.js, swap out some sections, and away you go!
-            </p>
-            <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+            <div class="cs-form-group">
+                <div class="cs-content">
+                    <span class="cs-topper">Need Service Now?</span>
+                    <h2 class="cs-title">Contact Us</h2>
+                </div>
+                <!--Form-->
+                <form class="cs-form" id="cs-form-1750" name="Contact Form" method="post">
+                    <label class="cs-label">
+                        Name *
+                        <input class="cs-input" required type="text" id="name-1750" name="name" placeholder="John Doe">
+                    </label>
+                    <label class="cs-label cs-email">
+                        Email *
+                        <input class="cs-input" required type="email" id="email-1750" name="email" placeholder="name@youremail.com">
+                    </label>
+                    <label class="cs-label cs-phone">
+                        Phone *
+                        <input class="cs-input" required type="phone" id="phone-1750" name="phone" placeholder="+1 (919) 630-8966">
+                    </label>
+                    <label class="cs-label">
+                        What is your Problem? *
+                        <textarea class="cs-input cs-textarea" required name="Message" id="message-1750" placeholder="Hello, I have termites..."></textarea>
+                    </label>
+                    <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+                </form>
+            </div>
+            <!--Contact Info-->
+            <div class="cs-info-group">
+                <div class="cs-info">
+                    <span class="cs-topper">Location</span>
+                    <span class="cs-detail">226 Sheriff Watson Rd<br>Sanford, NC 27332</span>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-topper">Hours</span>
+                    <span class="cs-detail">Open 24/7</span>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-topper">Contact</span>
+                    <span class="cs-detail">Phone: 1(919)630-8966</span>
+                    <span class="cs-detail">Email: info@wekillthebugs.net</span>
+                </div>
+            </div>
         </div>
 
-        <!-- Background Image -->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
-            <!--Large Tablet Image-->
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | jpeg %}" alt="kitchen" width="1" height="1" loading="eager" decoding="async">
-        </picture>
+        <div class="cs-picture-group">
+            <!--Replace with your iframe for your google business profile-->
+            <iframe class="cs-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d563396.7711448087!2d-79.40542698758553!3d35.451014750655304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89aca17eb07ec761%3A0x3c0e6e97823c9718!2sBug%20Guys%2C%20LLC.!5e0!3m2!1sen!2sus!4v1770908345645!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <!--All three graphics use the same src, which is transformed in the CSS. If you want to replace the graphic with another one, simply replace all the src's with the same URL and watch the magic happen!-->
+            <img class="cs-graphic cs-top cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-shape-top-light.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+            <img class="cs-graphic cs-left cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-shape-top-light.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+            <img class="cs-graphic cs-bottom cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-shape-top-light.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+
+            <!--This is a dark version. Download the images and change the fill color to match the color of the section background below it-->
+            <img class="cs-graphic cs-top cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-shape-top-dark.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+            <img class="cs-graphic cs-left cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-shape-top-dark.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+            <img class="cs-graphic cs-bottom cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-shape-top-dark.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
+        </div>
+
     </section>
+                                
+
+    
 
     <!-- ============================================ -->
-    <!--                   Services                   -->
+    <!--                  Services                    -->
     <!-- ============================================ -->
 
-    <section id="h-services-143">
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s1.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Full Kitchen Remodel
-                </h2>
+    <section id="services-1644">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">What We Provide To Our Customer</h2>
                 <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Designed to maintain your current colour, blend out a growing root or balance your blonde while providing full and demi-permanent coverage.
                 </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s2.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Exterior Repairs
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s3.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Utility Maintenance
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s4.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Design Consultation
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </li>
-        </ul>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <div class="cs-image-group">
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/checkmark-circle-gold.svg" alt="icon" width="48"
+                                height="48" aria-hidden="true">
+                    </div>
+                    <div class="cs-flex">
+                        <h2 class="cs-h2">Pest Control</h2>
+                        <p class="cs-item-text">
+                            We provide some of the finest quality, most responsive and reliable, and cost effective services and solutions.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-image-group">
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/dashboard-gold.svg" alt="icon" width="48"
+                                height="48" aria-hidden="true">
+                    </div>
+                    <div class="cs-flex">
+                        <h2 class="cs-h2">Termite Control</h2>
+                        <p class="cs-item-text">
+                            Fortune 500 companies to smaller and medium-sized companies to help manage risks to as low as reasonably practical.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-image-group">
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Lifebuoy-gold.svg" alt="icon" width="48"
+                                height="48" aria-hidden="true">
+                    </div>
+                    <div class="cs-flex">
+                        <h2 class="cs-h2">Moisture Control</h2>
+                        <p class="cs-item-text">
+                            Highly experienced staff of more than 100 professionals averaging 29+ years in industry and hands-on knowledge.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <div class="cs-image-group">
+                        <img class="cs-icon" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like-gold.svg" alt="icon" width="48"
+                                height="48" aria-hidden="true">
+                    </div>
+                    <div class="cs-flex">
+                        <h2 class="cs-h2">Encapsulations</h2>
+                        <p class="cs-item-text">
+                            Highly experienced staff of more than 100 professionals averaging 29+ years in industry and hands-on knowledge.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <a href="/project-one/" class="cs-button-solid">All Services</a>
+        </div>                            
     </section>
+                                    
 
     <!-- ============================================ -->
     <!--                 Side By Side                 -->
