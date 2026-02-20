@@ -1,6 +1,6 @@
 ---
-title: "Contact | Code Stitch Web Designs"
-description: "Meta description for the page"
+title: "Contact The Bug Guys | Free Pest & Moisture Inspection"
+description: "Reach out to Sanford's local pest control experts. Get a free quote for pest control, termite protection, or crawlspace encapsulation. Direct owner support."
 permalink: "/contact/"
 ---
 
@@ -20,11 +20,7 @@ permalink: "/contact/"
 
     <div id="banner-310">
         <div class="cs-container">
-            <span class="cs-int-title">Contact Us</span>
-            <div class="cs-breadcrumbs">
-                <a href="/" class="cs-link">Home</a>
-                <a href="/contact/" class="cs-link cs-active">Contact Us</a>
-            </div>
+            <span class="cs-int-title">Contact The Bug Guys</span>
         </div>
         <!--Background Image-->
         <picture class="cs-background">
@@ -52,48 +48,59 @@ permalink: "/contact/"
         <div class="cs-container">
             <div class="cs-left-section">
                 <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
+                    <span class="cs-topper">Get Help Today</span>
+                    <h2 class="cs-title">Request Your Free Inspection</h2>
                     <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
+                        Whether you have an active infestation or want to protect your home's foundation with encapsulation, we’re here to help. Fill out the form below and one of our local technicians will reach out shortly.
                     </p>
                 </div>
-                <form id="cs-form-265" name="Contact Form" method="post">
+                <form id="cs-form-265" name="Contact Form" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="Contact Form">
+                        <p class="hidden">
+                            <label>
+                                Don’t fill this out if you’re human:
+                                <input type="text" name="bot-field">
+                            </label>
+                        </p>
                     <label>
-                        Name
+                        Name *
                         <input required type="text" id="name-265" name="name" placeholder="Name">
                     </label>
                     <label>
-                        Email
+                        Email *
                         <input required type="text" id="email-265" name="email" placeholder="Email">
                     </label>
                     <label>
-                        Phone
+                        Phone *
                         <input required type="text" id="phone-265" name="phone" placeholder="Phone">
                     </label>
                     <label>
-                        How Did You Find Us
-                        <input type="text" id="find-265" name="find-us" placeholder="How did you find us?">
+                        Service Needed *
+                        <select name="service" id="service-265" class="cs-input" style="width: 100%; height: 52px; border-radius: 8px; border: 1px solid #ddd; padding-left: 12px;">
+                            <option value="general-pest">General Pest Control</option>
+                            <option value="termite">Termite Protection</option>
+                            <option value="crawlspace">Crawlspace Encapsulation</option>
+                            <option value="other">Other / Emergency</option>
+                        </select>
                     </label>
                     <label class="cs-label-message">
                         Message
-                        <textarea required name="Message" id="message-265" placeholder="Write message..."></textarea>
+                        <textarea required name="Message" id="message-265" placeholder="Tell us about your pest or moisture issue..."></textarea>
                     </label>
-                    <button class="cs-button-solid cs-submit" type="submit">Submit Message</button>
+                    <button class="cs-button-solid cs-submit" type="submit">Send Request</button>
                 </form>
             </div>
             <div class="cs-right-section">
                 <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{ client.email }}">{{ client.email }}</a>
+                <span class="cs-header">Email Us</span>
+                <a class="cs-link" href="mailto:info@wekillthebugs.net">info@wekillthebugs.net</a>
                 <!--Phone-->
-                <span class="cs-header">Phone</span>
+                <span class="cs-header">Call</span>
                 <a class="cs-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
                 <!--Address-->
-                <span class="cs-header">Address</span>
+                <span class="cs-header">Our Local Office</span>
                 <a class="cs-link" href="{{ client.address.mapLink }}">
                     {{ client.address.lineOne }}, <br>
-                    {{ client.address.lineTwo }}, <br>
                     {{ client.address.city }}, {{ client.address.state }}
                     {{ client.address.zip }}
                 </a>

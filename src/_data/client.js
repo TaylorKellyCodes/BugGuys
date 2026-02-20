@@ -4,11 +4,12 @@ module.exports = {
     phoneForTel: "919-630-8966",
     phoneFormatted: "(919) 630-8966",
     address: {
+        lineOne: "225 Sheriff Watson Rd",
         city: "Sanford",
         state: "NC",
         zip: "27332",
         country: "US",
-        mapLink: "https://maps.app.goo.gl/J2YVX1KWUuF6hDH48",
+        mapLink: "https://maps.app.goo.gl/zT2jZbXk9p2gkDVx8",
     },
     socials: {
         facebook: "https://www.facebook.com/WeKillTheBugs/",

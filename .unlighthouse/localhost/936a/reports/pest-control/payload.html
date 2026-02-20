@@ -1,0 +1,524 @@
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Standard meta tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Stop ants, roaches, and spiders today. Our quarterly protection plans are child and pet-safe. If the bugs come back, so do we—free of charge. Request a free quote!">
+        <link rel="canonical" href="https://www.wekillthebugs.net/pest-control/">
+        <meta name="generator" content="Eleventy v3.1.2">
+
+        <!--Social Media Display-->
+        <meta property="og:title" content="Guaranteed Pest Control in Sanford, NC | The Bug Guys"/>
+        <meta property="og:description" content="Stop ants, roaches, and spiders today. Our quarterly protection plans are child and pet-safe. If the bugs come back, so do we—free of charge. Request a free quote!"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.wekillthebugs.net/pest-control/"/>
+        <meta property="og:image" content="/assets/images/bug-logo.svg"/>
+        <meta property="og:image:secure_url" content="/assets/images/bug-logo.svg"/>
+
+        <!--Favicons-->
+        <!-- https://realfavicongenerator.net/ -->
+        <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96"/>
+        <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg"/>
+        <link rel="shortcut icon" href="/assets/favicons/favicon.ico"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png"/>
+        <meta name="apple-mobile-web-app-title" content="Starter Kit"/>
+        <link rel="manifest" href="/assets/favicons/site.webmanifest"/>
+
+        <!-- Preloads -->
+        <link rel="preload" as="image" href="/assets/images/bug-logo.svg">
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+        <!-- Sitewide Stylesheets and Scripts -->
+        <link rel="stylesheet" href="/assets/css/root.css">
+        <script defer src="/assets/js/dark.js"></script>
+        <script defer src="/assets/js/nav.js"></script>
+
+        
+    <link rel="stylesheet" href="/assets/css/pest-control.css">
+
+
+        <title>Guaranteed Pest Control in Sanford, NC | The Bug Guys</title>
+    <script type="module" integrity="sha512-I1nWw2KfQnK/t/zOlALFhLrZA1yzsCzBl7DxamXdg/QF7kq+O4sYBZLl0DFCE7vP2ixPccL/k0/oqvhyDB73zQ==" src="/.11ty/reload-client.js"></script></head>
+    <body>
+        <!--Screen reader skip main nav-->
+        <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+        <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-top-bar">
+        <div class="cs-top-container">
+            <div class="cs-top-contact">
+                <a href="" class="cs-top-link">
+                    <img class="cs-link-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/phone-grey.svg" alt="phone logo" width="16" height="16" aria-hidden="true" decoding="async">
+                    Call us: +1 (919) 630-8966
+                </a>
+                <a href="" class="cs-top-link">
+                    <img class="cs-link-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/clock-grey.svg" alt="clock logo" width="20" height="20" aria-hidden="true" decoding="async">
+                    Open 24/7
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="/index/" class="cs-logo" aria-label="back to home">
+            <img src="/assets/svgs/bug-logo.svg" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="/index/" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span class="cs-li-link">
+                            Services
+                            <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chev-down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a href="/pest-control/" class="cs-li-link cs-drop-link">Pest Control</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/termite-protection/" class="cs-li-link cs-drop-link">Termite Protection</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/crawlspace-encapsulation/" class="cs-li-link cs-drop-link">Crawlspace Encapsulation</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/contact/" class="cs-li-link">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <button id="dark-mode-toggle" aria-label="dark mode toggle">
+            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button>
+    </div>
+</header>
+                                
+        <main id="main">
+            
+
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero-541">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h1 class="cs-title">Sleep Better with Guaranteed Pest Protection in Sanford.</h1>
+                <p class="cs-text">
+                    45 years of keeping NC homes bug-free. If they come back, so do we—free of charge.
+                </p>
+                <a href="" class="cs-button-solid">Get My Free Quote</a>
+            </div>
+        </div>
+        <!--Background Color-->
+        <picture class="cs-background">
+            <source media="(min-width: 1024px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/hero.jpg">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/hero-t.jpg">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/hero-m.jpg">
+            <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Hero/hero.jpg" alt="meeting" width="275" height="132">
+            </picture>
+    </section>
+                                    
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services-1081">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Approach</span>
+                <h2 class="cs-title">Why Sanford Chooses The Bug Guys</h2>
+                <p class="cs-text">
+                    We target the root cause of ants, spiders, roaches, and silverfish—not just the ones you see, but the ones hiding in your walls.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mech3.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mech3.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mech3.jpg" alt="mechanic" width="413" height="240" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/engine.svg" alt="icon" width="32" height="32" aria-hidden="true">
+                        Comprehensive Shield
+                    </h3>
+                    <p class="cs-item-text">
+                        We target the root cause of ants, spiders, roaches, and silverfish—not just the ones you see, but the ones hiding in your walls.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mech2.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mech2.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mech2.jpg" alt="mechanic" width="413" height="240" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/steering-wheel.svg" alt="icon" width="32" height="32" aria-hidden="true">
+                        Family-Safe Science
+                    </h3>
+                    <p class="cs-item-text">
+                        We use 2026-standard, eco-responsible treatments that are lethal to pests but safe for your kids and pets.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mech1.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mech1.jpg">
+                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/mech1.jpg" alt="mechanic" width="413" height="240" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/oil-bottle.svg" alt="icon" width="32" height="32" aria-hidden="true">
+                        The Owner's Guarantee
+                    </h3>
+                    <p class="cs-item-text">
+                        No call centers. No generic corporate billing. If the bugs come back, so does the owner. You have our direct line.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    Steps                     -->
+    <!-- ============================================ -->
+
+    <section id="steps-1893">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dermatologist1.jpeg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dermatologist1.jpeg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dermatologist1.jpeg" alt="dermatologist" width="324" height="467">
+                </picture>
+            </div>
+            <div class="cs-wrapper">
+                <div class="cs-content">
+                    <span class="cs-topper">How to get started</span>
+                    <h2 class="cs-title">Your 3-Step Path to a Bug-Free Home</h2>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <span class="cs-number">01</span>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">The Free Inspection</h3>
+                            <p class="cs-item-text">
+                                We identify every entry point and nesting site around your property.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-number">02</span>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">The Custom Barrier</h3>
+                            <p class="cs-item-text">
+                                We apply our 45-year proven barrier, customized to the NC climate.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <span class="cs-number">03</span>
+                        <div class="cs-flex">
+                            <h3 class="cs-h3">Owner-Backed Support</h3>
+                            <p class="cs-item-text">
+                                You get a direct line to the owner. If bugs return, we come back for free.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                     FAQ                      -->
+    <!-- ============================================ -->
+
+    <section id="faq-1237">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Pest Control FAQ</span>
+                <h2 class="cs-title">Common Questions</h2>
+            </div>
+            <div class="cs-wrapper">
+                <ul class="cs-faq-group">
+                    <li class="cs-faq-item active">
+                        <button class="cs-button">
+                            <span class="cs-number">1</span>
+                            <span class="cs-button-text">
+                                Is quarterly pest control really necessary in Sanford, NC?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Yes. North Carolina’s climate is a breeding ground for pests. Each season brings a new wave: Ants in the spring, Spiders in the summer, and Rodents in the winter. Our quarterly service creates a permanent barrier that adapts to these seasonal migrations.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-number">2</span>
+                            <span class="cs-button-text">
+                                Are your pest control treatments safe for my kids and pets?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Safety is our #1 priority. We use 2026-standard, eco-responsible products formulated to be lethal to insects but safe for mammalian biology. Once the treatment is dry (usually within 30 minutes), your children and pets can play freely.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-number">3</span>
+                            <span class="cs-button-text">
+                                Why choose a local owner over a national franchise?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            When you call Bug Guys, you aren't just a number. You get Chad’s 45 years of local experience and his direct phone number. National chains use one-size-fits-all chemicals, but we mix ours for Sanford's specific red clay and humidity levels.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-number">4</span>
+                            <span class="cs-button-text">
+                                What is included in a quarterly pest plan?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Our plan covers ants, spiders, roaches, silverfish, and crickets. It includes a full exterior perimeter spray, de-webbing of your eaves, and interior spot treatments as needed. If bugs come back between visits, we come back for free.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-number">5</span>
+                            <span class="cs-button-text">
+                                Do I need to be home during my service?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            For our quarterly barrier service, you don’t need to be home! We focus on the exterior "envelope" of your house where 90% of bugs originate. If you have interior issues, we can schedule a specific time to address those areas.
+                        </p>
+                    </li>
+                </ul>
+                <ul class="cs-faq-group">
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-number">6</span>
+                            <span class="cs-button-text">
+                                How long until the bugs disappear after treatment?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            You’ll usually see a "flush out" effect within 48 hours where activity temporarily increases as pests flee. Within 7–10 days, the colony will be suppressed and the long-term barrier will be fully established.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-number">7</span>
+                            <span class="cs-button-text">
+                                Does your service cover bed bugs or cockroaches?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Our standard plan covers "occasional invaders" like American Roaches. German Cockroaches and Bed Bugs require specialized, intensive protocols. We provide free inspections to determine the best course of action for these specific pests.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-number">8</span>
+                            <span class="cs-button-text">
+                                Can I just use store-bought perimeter spray?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Retail sprays are often "repellents" that just scatter bugs into your walls. Bug Guys uses professional "non-repellents," meaning bugs walk through it and carry the active ingredient back to the nest, eliminating the entire colony.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-number">9</span>
+                            <span class="cs-button-text">
+                                Why do I see more spiders during the autumn?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            As temperatures drop in the Triangle, spiders seek warmth and mates inside. Our autumn service focuses heavily on sealing entry points and clearing egg sacs from your crawlspace and eaves to prevent an indoor population explosion.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-number">10</span>
+                            <span class="cs-button-text">
+                                What makes Bug Guys different from "Big Brands"?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            It’s the Owner’s Guarantee. No call centers and no rotating technicians who don't know your property. You get a neighbor who has protected Sanford homes for 45 years. If you have a problem, you call Chad directly.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+                                    
+                                    
+                                    
+
+    <!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-51">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Schedule Today</span>
+            <h2 class="cs-title">Ready to Make Your Home a No-Fly Zone?</h2>
+            <p class="cs-text">
+                Join 45 years of satisfied families in Sanford and the Triangle.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get My Free Quote</a>
+        </div>
+    </div>
+    <!-- Background Image-->
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/roach-4d6344b9.avif" type="image/avif">
+        <source media="(max-width: 600px)" srcset="/assets/images/roach-30632ebb.webp" type="image/webp">
+        <source media="(max-width: 600px)" srcset="/assets/images/roach-956a5e88.jpeg" type="image/jpeg">
+        <!--Tablet Image-->
+        <source media="(max-width: 1024px)" srcset="/assets/images/roach-8b8a7af9.avif" type="image/avif">
+        <source media="(max-width: 1024px)" srcset="/assets/images/roach-69920639.webp" type="image/webp">
+        <source media="(max-width: 1024px)" srcset="/assets/images/roach-d92145cb.jpeg" type="image/jpeg">
+        <!--Desktop Image-->
+        <source media="(min-width: 1024px)" srcset="/assets/images/roach-c9be5511.avif" type="image/avif">
+        <source media="(min-width: 1024px)" srcset="/assets/images/roach-ecf7d7a5.webp" type="image/webp">
+        <source media="(min-width: 1024px)" srcset="/assets/images/roach-4d2a28be.jpeg" type="image/jpeg">
+        <img src="/assets/images/roach-4d2a28be.jpeg" alt="cabinets" width="1920" height="426" loading="lazy" decoding="async">
+    </picture>
+</section>
+
+
+        </main>
+        <footer id="cs-footer-275">
+    <div class="cs-container">
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="/">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/bug-logo.svg" alt="bug-logo" width="240" height="32">
+            </a>
+            <p class="cs-text">
+                From the red clay of the Triangle to the coastal sands of Brunswick County, we’ve protected North Carolina homes for 45 years. Family-owned, locally operated, and bug-free guaranteed.
+            </p>
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit google profile" href="https://maps.app.goo.gl/zT2jZbXk9p2gkDVx8" target="_blank" rel="noopener">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="google" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit facebook profile" href="https://www.facebook.com/WeKillTheBugs/" target="_blank" rel="noopener">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/facebook.svg" alt="facebook" width="6" height="11">
+                </a>
+            </div>
+        </div>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Services</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/pest-control/">Pest Control</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/termite-protection/">Termite Protection</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/crawlspace-encapsulation/">Crawlspace Encapsulations</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Service Areas</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/">Sanford & Lillington</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/">Raleigh, Apex & Cary</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/">Southern Pines & Pinehurst</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/">Leland & Brunswick Co.</a>
+            </li>
+        </ul>
+        <ul class="cs-contact">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-contact-li">
+                <a class="cs-contact-link cs-address" href="https://maps.app.goo.gl/zT2jZbXk9p2gkDVx8" target="_blank" rel="noopener">
+                    225 Sheriff Watson Rd, <br>
+                    Sanford, NC
+                    27332
+                </a>
+            </li>
+            <li class="cs-contact-li">
+                <a class="cs-contact-link" href="tel:919-630-8966">(919) 630-8966</a>
+            </li>
+            <li class="cs-contact-li">
+                <a class="cs-contact-link" href="mailto:info@wekillthebugs.net">info@wekillthebugs.net</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="cs-bottom">
+        <span class="cs-copyright">
+            &copy; 2026 Bug Guys Pest Control | All Rights Reserved
+        </span>
+        <span class="cs-credit">
+            Designed & Developed by 
+            <a href="https://trianglewebdesign.com" class="cs-credit-link" target="_blank" rel="noopener">
+                Triangle Web Design
+            </a>
+        </span>
+    </div>
+</footer>
+
+    </body>
+</html>
