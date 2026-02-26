@@ -6,6 +6,39 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 /*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+
+#banner-310 {
+    /* Mobile: Clears the logo with extra breathing room */
+    padding-top: 15rem; 
+    
+    /* Ensure the background image stays with the container */
+    position: relative;
+    overflow: hidden;
+
+    .cs-background {
+        /* This ensures the image also shifts down if it's absolutely positioned */
+        top: 0;
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #banner-310 {
+        /* Reduced for Tablet as requested */
+        padding-top: 15rem;
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #banner-310 {
+        /* Reduced for Desktop as requested */
+        padding-top: 12rem;
+    }
+}
+/*-- -------------------------- -->
 <---          Contact           -->
 <--- -------------------------- -*/
 
@@ -15,6 +48,7 @@
         padding: var(--sectionPadding);
 
         .cs-container {
+            margin-top: 8rem;
             width: 100%;
             /* changes to 1280px at tablet */
             max-width: (550/16rem);
