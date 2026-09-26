@@ -6,7 +6,7 @@ module.exports = {
     phoneForTel: "+19196308966",
     phoneFormatted: "(919) 630-8966",
     address: {
-        lineOne: "225 Sheriff Watson Rd",
+        lineOne: "226 Sheriff Watson Rd",
         city: "Sanford",
         state: "NC",
         zip: "27332",
