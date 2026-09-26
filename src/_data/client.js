@@ -30,7 +30,7 @@ module.exports = {
     // Default social preview image (1200x630 JPG). Path is relative to the domain.
     ogImage: "/assets/images/og-image.jpg",
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    domain: "https://www.wekillthebugs.net",
+    domain: "https://wekillthebugs.net",
     // Passing the isProduction variable for use in HTML templates
     isProduction: process.env.ELEVENTY_ENV === "PROD",
 };
