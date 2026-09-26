@@ -1,0 +1,25 @@
+---
+permalink: /llms.txt
+layout: null
+eleventyExcludeFromCollections: true
+---
+# {{ client.name }}
+
+> Family-owned, locally operated pest control company in {{ client.address.city }}, {{ client.address.state }} with 45 years of combined experience. Serving Sanford and the NC Triangle, plus Southern Pines, Pinehurst, and Brunswick County. Free inspections, family-safe treatments, and a bug-free guarantee: if the bugs come back between scheduled visits, we come back at no additional cost.
+
+Phone: {{ client.phoneFormatted }}
+Email: {{ client.email }}
+Address: {{ client.address.lineOne }}, {{ client.address.city }}, {{ client.address.state }} {{ client.address.zip }}
+Hours: Open 24/7
+
+## Services
+
+- [Pest Control]({{ client.domain }}/pest-control/): Quarterly protection plans for ants, spiders, roaches, silverfish, and crickets.
+- [Termite Protection]({{ client.domain }}/termite-protection/): Termite inspections, liquid barriers, and baiting systems.
+- [Crawlspace Encapsulation]({{ client.domain }}/crawlspace-encapsulation/): Moisture, mold, and wood rot control with encapsulation and dehumidification.
+
+## Company
+
+- [About]({{ client.domain }}/about/)
+- [Reviews]({{ client.domain }}/reviews/)
+- [Contact and free quote]({{ client.domain }}/contact/)

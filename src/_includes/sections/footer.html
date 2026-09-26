@@ -2,17 +2,17 @@
     <div class="cs-container">
         <div class="cs-logo-group">
             <a aria-label="go back to home" class="cs-logo" href="/">
-                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/bug-logo.svg" alt="bug-logo" width="240" height="32">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/bug-logo.svg" alt="" width="240" height="32">
             </a>
             <p class="cs-text">
                 From the red clay of the Triangle to the coastal sands of Brunswick County, we protect North Carolina homes with 45 years combined experience. Family-owned, locally operated, and bug-free guaranteed.
             </p>
             <div class="cs-social">
                 <a class="cs-social-link" aria-label="visit google profile" href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="google" width="11" height="11">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/google.svg" alt="" width="11" height="11">
                 </a>
                 <a class="cs-social-link" aria-label="visit facebook profile" href="{{ client.socials.facebook }}" target="_blank" rel="noopener">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/facebook.svg" alt="facebook" width="6" height="11">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/facebook.svg" alt="" width="6" height="11">
                 </a>
             </div>
         </div>
@@ -27,7 +27,19 @@
                 <a class="cs-nav-link" href="/termite-protection/">Termite Protection</a>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/crawlspace-encapsulation/">Crawlspace Encapsulations</a>
+                <a class="cs-nav-link" href="/crawlspace-encapsulation/">Crawlspace Encapsulation</a>
+            </li>
+            <li class="cs-nav-li">
+                <span class="cs-header">Company</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/about/">About Us</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/reviews/">Reviews</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="/contact/">Contact</a>
             </li>
         </ul>
         <ul class="cs-nav">
@@ -35,16 +47,16 @@
                 <span class="cs-header">Service Areas</span>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/">Sanford & Lillington</a>
+                <span class="cs-nav-link">Sanford & Lillington</span>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/">Raleigh, Apex & Cary</a>
+                <span class="cs-nav-link">Raleigh, Apex & Cary</span>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/">Southern Pines & Pinehurst</a>
+                <span class="cs-nav-link">Southern Pines & Pinehurst</span>
             </li>
             <li class="cs-nav-li">
-                <a class="cs-nav-link" href="/">Leland & Brunswick Co.</a>
+                <span class="cs-nav-link">Leland & Brunswick Co.</span>
             </li>
         </ul>
         <ul class="cs-contact">
@@ -52,7 +64,7 @@
                 <span class="cs-header">Contact</span>
             </li>
             <li class="cs-contact-li">
-                <a class="cs-contact-link cs-address" href="" target="_blank" rel="noopener">
+                <a class="cs-contact-link cs-address" href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
                     {{ client.address.city }}, {{ client.address.state }}
                     {{ client.address.zip }}
                 </a>

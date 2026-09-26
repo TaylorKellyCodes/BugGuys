@@ -1,4 +1,5 @@
-<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+ <!-- A fully fleshed-out <head>, dynamically changing based on client.js and the page front matter -->
+ <!-- Optional front matter: image (og image path), ogType, noindex (true), schemaPageType, breadcrumb -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,16 +9,29 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="{{ description }}">
+        {% if noindex %}<meta name="robots" content="noindex, follow">{% endif %}
         <link rel="canonical" href="{{ client.domain }}{{ page.url }}">
         <meta name="generator" content="{{ eleventy.generator }}">
 
         <!--Social Media Display-->
+        {% set ogImage = client.domain + (image or client.ogImage) %}
+        <meta property="og:site_name" content="{{ client.name }}"/>
+        <meta property="og:locale" content="en_US"/>
         <meta property="og:title" content="{{ title }}"/>
         <meta property="og:description" content="{{ description }}"/>
-        <meta property="og:type" content="website"/>
+        <meta property="og:type" content="{{ ogType or 'website' }}"/>
         <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
-        <meta property="og:image" content="{{ image or "/assets/images/bug-logo.svg" }}"/>
-        <meta property="og:image:secure_url" content="{{ image or "/assets/images/bug-logo.svg" }}"/>
+        <meta property="og:image" content="{{ ogImage }}"/>
+        <meta property="og:image:secure_url" content="{{ ogImage }}"/>
+        {% if not image %}
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="630"/>
+        <meta property="og:image:alt" content="The Bug Guys Pest Control logo"/>
+        {% endif %}
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content="{{ title }}"/>
+        <meta name="twitter:description" content="{{ description }}"/>
+        <meta name="twitter:image" content="{{ ogImage }}"/>
 
         <!--Favicons-->
         <!-- https://realfavicongenerator.net/ -->
@@ -25,11 +39,10 @@
         <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg"/>
         <link rel="shortcut icon" href="/assets/favicons/favicon.ico"/>
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png"/>
-        <meta name="apple-mobile-web-app-title" content="Starter Kit"/>
+        <meta name="apple-mobile-web-app-title" content="Bug Guys"/>
         <link rel="manifest" href="/assets/favicons/site.webmanifest"/>
 
         <!-- Preloads -->
-        <link rel="preload" as="image" href="/assets/images/bug-logo.svg">
         <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
         <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
 
@@ -37,6 +50,9 @@
         <link rel="stylesheet" href="/assets/css/root.css">
         <script defer src="/assets/js/dark.js"></script>
         <script defer src="/assets/js/nav.js"></script>
+
+        <!-- Sitewide structured data (LocalBusiness, WebSite, WebPage, BreadcrumbList) -->
+        {% include "components/schema.html" %}
 
         {% block head %}{% endblock %}
 

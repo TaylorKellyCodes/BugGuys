@@ -1,6 +1,8 @@
 {
     "layout": "layouts/post.html",
     "tags": "post",
+    "noindex": true,
+    "sitemap": { "ignore": true },
     "eleventyComputed": {
         "preloadImg": "{{ image }}",
         "permalink": "/blog/{{ url | slugify }}/index.html"

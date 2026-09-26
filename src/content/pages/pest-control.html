@@ -2,12 +2,130 @@
 title: "Guaranteed Pest Control in Sanford, NC | The Bug Guys"
 description: "Stop ants, roaches, and spiders today. Our quarterly protection plans are child and pet-safe. If the bugs come back, so do we—free of charge. Request a free quote!"
 permalink: "/pest-control/"
+breadcrumb: "Pest Control"
+sitemap:
+  priority: 0.9
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/pest-control.css">
+
+    <!-- Structured data for this service and its FAQ (keep the FAQ text in sync with the FAQ section below) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "{{ client.domain }}/pest-control/#service",
+      "name": "Pest Control",
+      "serviceType": "Residential pest control",
+      "description": "Stop ants, roaches, and spiders today. Our quarterly protection plans are child and pet-safe. If the bugs come back, so do we—free of charge. Request a free quote!",
+      "url": "{{ client.domain }}/pest-control/",
+      "provider": {
+        "@id": "{{ client.domain }}/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sanford"
+        },
+        {
+          "@type": "State",
+          "name": "North Carolina"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "{{ client.domain }}/pest-control/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is quarterly pest control really necessary in Sanford, NC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. North Carolina’s climate is a breeding ground for pests. Each season brings a new wave: Ants in the spring, Spiders in the summer, and Rodents in the winter. Our quarterly service creates a permanent barrier that adapts to these seasonal migrations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are your pest control treatments safe for my kids and pets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Safety is our #1 priority. We use 2026-standard, eco-responsible products formulated to be lethal to insects but safe for mammalian biology. Once the treatment is dry (usually within 30 minutes), your children and pets can play freely."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why choose a local owner over a national franchise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When you call Bug Guys, you aren't just a number. You get our team's combined 45 years of local experience and the owner's direct phone number. National chains use one-size-fits-all chemicals, but we mix ours for each area's specific soil type and humidity levels."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is included in a quarterly pest plan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our plan covers ants, spiders, roaches, silverfish, and crickets. It includes a full exterior perimeter spray, de-webbing of your eaves, and interior spot treatments as needed. If bugs come back between visits, we come back for free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to be home during my service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For our quarterly barrier service, you don’t need to be home! We focus on the exterior \"envelope\" of your house where 90% of bugs originate. If you have interior issues, we can schedule a specific time to address those areas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long until the bugs disappear after treatment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You’ll usually see a \"flush out\" effect within 48 hours where activity temporarily increases as pests flee. Within 7–10 days, the colony will be suppressed and the long-term barrier will be fully established."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does your service cover bed bugs or cockroaches?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our standard plan covers \"occasional invaders\" like American Roaches. German Cockroaches and Bed Bugs require specialized, intensive protocols. We provide free inspections to determine the best course of action for these specific pests."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I just use store-bought perimeter spray?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Retail sprays are often \"repellents\" that just scatter bugs into your walls. Bug Guys uses professional \"non-repellents,\" meaning bugs walk through it and carry the active ingredient back to the nest, eliminating the entire colony."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do I see more spiders during the autumn?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As temperatures drop in the Triangle, spiders seek warmth and mates inside. Our autumn service focuses heavily on sealing entry points and clearing egg sacs from your crawlspace and eaves to prevent an indoor population explosion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes Bug Guys different from \"Big Brands\"?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It’s the Owner’s Guarantee. No call centers and no rotating technicians who don't know your property. You get a team of neighbors who have protected Sanford homes for 45 years. If you have a problem, you can call the owners directly."
+          }
+        }
+      ]
+    }
+    </script>
 {% endblock %}
 
 {% block body %}
@@ -23,15 +141,15 @@ permalink: "/pest-control/"
                 <p class="cs-text">
                     45 years of keeping NC homes bug-free. If they come back, so do we—free of charge.
                 </p>
-                <a href="" class="cs-button-solid">Get My Free Quote</a>
+                <a href="/contact/" class="cs-button-solid">Get My Free Quote</a>
             </div>
         </div>
         <!--Background Color-->
         <picture class="cs-background">
-            <source media="(min-width: 1024px)" srcset="/assets/images/sanford-home.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/sanford-home.webp">
-            <source media="(max-width: 600px)" srcset="/assets/images/sanford-home.webp">
-            <img fetchpriority="high" aria-hidden="true" decoding="async" src="/assets/images/sanford-home.webp" alt="meeting" width="275" height="132">
+            <source media="(min-width: 1024px)" srcset="/assets/images/sanford-home-1600.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/sanford-home-1600.webp">
+            <source media="(max-width: 600px)" srcset="/assets/images/sanford-home-800.webp">
+            <img fetchpriority="high" aria-hidden="true" decoding="async" src="/assets/images/sanford-home-1600.webp" alt="" width="275" height="132">
             </picture>
     </section>
                                     
@@ -56,10 +174,10 @@ permalink: "/pest-control/"
                         <source media="(max-width: 600px)" srcset="/assets/images/foundation.webp">
                         <!--Tablet and above Image-->
                         <source media="(min-width: 601px)" srcset="/assets/images/foundation.webp">
-                        <img loading="lazy" decoding="async" src="/assets/images/foundation.webp" alt="house-foundation" width="413" height="240" aria-hidden="true">
+                        <img loading="lazy" decoding="async" src="/assets/images/foundation.webp" alt="Brick foundation wall of a home" width="413" height="240">
                     </picture>
                     <h3 class="cs-h3">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/shield.svg" alt="icon" width="32" height="32" aria-hidden="true">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/shield.svg" alt="" width="32" height="32" aria-hidden="true">
                         Comprehensive Shield
                     </h3>
                     <p class="cs-item-text">
@@ -72,10 +190,10 @@ permalink: "/pest-control/"
                         <source media="(max-width: 600px)" srcset="/assets/images/kids.webp">
                         <!--Tablet and above Image-->
                         <source media="(min-width: 601px)" srcset="/assets/images/kids.webp">
-                        <img loading="lazy" decoding="async" src="/assets/images/kids.webp" alt="kid-safe" width="413" height="240" aria-hidden="true">
+                        <img loading="lazy" decoding="async" src="/assets/images/kids.webp" alt="Children playing safely in a yard" width="413" height="240">
                     </picture>
                     <h3 class="cs-h3">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/science.svg" alt="icon" width="32" height="32" aria-hidden="true">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/science.svg" alt="" width="32" height="32" aria-hidden="true">
                         Family-Safe Science
                     </h3>
                     <p class="cs-item-text">
@@ -88,10 +206,10 @@ permalink: "/pest-control/"
                         <source media="(max-width: 600px)" srcset="/assets/images/handshake.webp">
                         <!--Tablet and above Image-->
                         <source media="(min-width: 601px)" srcset="/assets/images/handshake.webp">
-                        <img loading="lazy" decoding="async" src="/assets/images/handshake.webp" alt="handshake" width="413" height="240" aria-hidden="true">
+                        <img loading="lazy" decoding="async" src="/assets/images/handshake.webp" alt="Two people shaking hands" width="413" height="240">
                     </picture>
                     <h3 class="cs-h3">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/guarantee.svg" alt="icon" width="32" height="32" aria-hidden="true">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/guarantee.svg" alt="" width="32" height="32" aria-hidden="true">
                         The Owner's Guarantee
                     </h3>
                     <p class="cs-item-text">
@@ -114,7 +232,7 @@ permalink: "/pest-control/"
                     <source media="(max-width: 600px)" srcset="/assets/images/home.webp">
                     <!--Tablet and above Image-->
                     <source media="(min-width: 601px)" srcset="/assets/images/home.webp">
-                    <img loading="lazy" decoding="async" src="/assets/images/home.webp" alt="home" width="324" height="467">
+                    <img loading="lazy" decoding="async" src="/assets/images/home.webp" alt="Home with a red tile roof surrounded by trees" width="324" height="467">
                 </picture>
             </div>
             <div class="cs-wrapper">
@@ -286,6 +404,24 @@ permalink: "/pest-control/"
                                     
                                     
                                     
+
+        <!-- ============================================ -->
+    <!--               Related Services               -->
+    <!-- ============================================ -->
+
+    <section id="related-services">
+        <div class="cs-container">
+            <span class="cs-topper">More From The Bug Guys</span>
+            <h2 class="cs-title">Related Services</h2>
+            <p class="cs-text">
+                Bugs are only part of what threatens a Sanford home. Ask us about <a href="/termite-protection/">termite protection</a> and <a href="/crawlspace-encapsulation/">crawlspace encapsulation</a>, so one local team covers your home from every angle.
+            </p>
+            <div class="cs-links">
+                <a href="/termite-protection/" class="cs-button-solid">Termite Protection</a>
+                <a href="/crawlspace-encapsulation/" class="cs-button-solid">Crawlspace Encapsulation</a>
+            </div>
+        </div>
+    </section>
 
     {% include 'sections/cta.html' %}
 

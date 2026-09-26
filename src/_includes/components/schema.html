@@ -1,0 +1,100 @@
+{#- Sitewide JSON-LD. Business details come from src/_data/client.js so they can't drift from the visible site. -#}
+{%- set siteUrl = client.domain -%}
+{%- set pageUrl = client.domain + page.url -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "PestControlService"],
+      "@id": "{{ siteUrl }}/#business",
+      "name": {{ client.name | dump | safe }},
+      "legalName": {{ client.legalName | dump | safe }},
+      "url": "{{ siteUrl }}/",
+      "telephone": "{{ client.phoneForTel }}",
+      "email": "{{ client.email }}",
+      "priceRange": "{{ client.priceRange }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ siteUrl }}/assets/favicons/web-app-manifest-512x512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "{{ siteUrl }}{{ client.ogImage }}",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": {{ client.address.lineOne | dump | safe }},
+        "addressLocality": "{{ client.address.city }}",
+        "addressRegion": "{{ client.address.state }}",
+        "postalCode": "{{ client.address.zip }}",
+        "addressCountry": "{{ client.address.country }}"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": {{ client.geo.latitude }},
+        "longitude": {{ client.geo.longitude }}
+      },
+      "hasMap": "{{ client.address.mapLink }}",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "sameAs": ["{{ client.socials.facebook }}", "{{ client.address.mapLink }}"],
+      "areaServed": [
+        { "@type": "State", "name": "{{ client.areaServed.state }}" }
+        {%- for city in client.areaServed.cities -%}
+        , { "@type": "City", "name": "{{ city }}" }
+        {%- endfor -%}
+        {%- for county in client.areaServed.counties -%}
+        , { "@type": "AdministrativeArea", "name": "{{ county }}" }
+        {%- endfor -%}
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Pest Control Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pest Control", "url": "{{ siteUrl }}/pest-control/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Termite Protection", "url": "{{ siteUrl }}/termite-protection/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crawlspace Encapsulation", "url": "{{ siteUrl }}/crawlspace-encapsulation/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bed Bug Treatment" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mosquito Control" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rodent Exclusion" } }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ siteUrl }}/#website",
+      "url": "{{ siteUrl }}/",
+      "name": {{ client.name | dump | safe }},
+      "publisher": { "@id": "{{ siteUrl }}/#business" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "{{ schemaPageType or 'WebPage' }}",
+      "@id": "{{ pageUrl }}#webpage",
+      "url": "{{ pageUrl }}",
+      "name": {{ title | dump | safe }},
+      "description": {{ description | dump | safe }},
+      "isPartOf": { "@id": "{{ siteUrl }}/#website" },
+      "about": { "@id": "{{ siteUrl }}/#business" },
+      "primaryImageOfPage": { "@type": "ImageObject", "url": "{{ client.domain }}{{ image or client.ogImage }}" },
+      "inLanguage": "en-US"{% if breadcrumb %},
+      "breadcrumb": { "@id": "{{ pageUrl }}#breadcrumb" }{% endif %}
+    }
+    {%- if breadcrumb -%}
+    ,
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{ pageUrl }}#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ siteUrl }}/" },
+        { "@type": "ListItem", "position": 2, "name": {{ breadcrumb | dump | safe }}, "item": "{{ pageUrl }}" }
+      ]
+    }
+    {%- endif -%}
+  ]
+}
+</script>
