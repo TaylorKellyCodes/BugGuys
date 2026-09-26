@@ -2,12 +2,130 @@
 title: "Termite Treatment & Inspections Sanford | Protect Your Equity"
 description: "Don't let termites destroy your home. We provide professional-grade liquid barriers and baiting systems backed by 45 years of NC expertise. Schedule your termite check."
 permalink: "/termite-protection/"
+breadcrumb: "Termite Protection"
+sitemap:
+  priority: 0.9
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/termite-protection.css">
+
+    <!-- Structured data for this service and its FAQ (keep the FAQ text in sync with the FAQ section below) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "{{ client.domain }}/termite-protection/#service",
+      "name": "Termite Protection",
+      "serviceType": "Termite treatment and inspection",
+      "description": "Don't let termites destroy your home. We provide professional-grade liquid barriers and baiting systems backed by 45 years of NC expertise. Schedule your termite check.",
+      "url": "{{ client.domain }}/termite-protection/",
+      "provider": {
+        "@id": "{{ client.domain }}/#business"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sanford"
+        },
+        {
+          "@type": "State",
+          "name": "North Carolina"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "{{ client.domain }}/termite-protection/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I know if I have termites?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Look for mud tubes on your foundation, \"swarming\" insects near windows, or wood that sounds hollow when tapped. Because they eat from the inside out, they are often invisible until damage is severe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are termite treatments safe for my garden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our barrier treatments are applied directly to the soil foundation and bait stations are self-contained, meaning your landscaping and lawn remain safe for pets and play."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the termite bond transferable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! One of the biggest benefits of a Bug Guys Termite Bond is that it can be transferred to new owners if you sell your home, providing a huge advantage in the Sanford real estate market."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does the protection last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our liquid barriers are designed to last for years, but NC's shifting soil and humidity mean annual inspections are vital to ensuring the barrier hasn't been breached by roots or construction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are termites such a major problem specifically in Sanford and Central NC",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Central North Carolina sits in a \"high activity\" termite zone due to our dense red clay soil and extreme humidity. The warm, damp environment allows subterranean termites to stay active nearly year-round, making professional soil barriers essential for any home with a wood-frame foundation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I just use store-bought termite bait stations from a hardware store?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While retail stations exist, they lack the professional-grade attractants and termiticides used by the Bug Guys. Our industrial-grade systems are monitored by technicians with 45 combined years of experience who know exactly where to place them based on NC soil moisture levels and foundation types."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I get a termite inspection if I’m buying a home in Lee or Wake County?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Most NC lenders require a Wood-Destroying Insect Report (WDIR). Because we are local owners, we provide thorough, honest inspections that identify hidden damage in crawlspaces and floor joists that \"big brand\" inspectors often overlook during a quick walkthrough."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a termite \"bond\" and a one-time treatment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A one-time treatment kills active colonies, but a Bug Guys Termite Bond is an ongoing \"Asset Protection Plan.\" It includes annual re-inspections and a guarantee that if termites return, we treat the area at no additional cost—providing long-term security for your home's equity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does homeowner's insurance in North Carolina cover termite damage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard NC homeowner's insurance policies almost never cover termite damage, as it is considered \"preventable maintenance.\" This is why a professional protection plan is vital; the cost of a Bug Guys barrier is a fraction of the tens of thousands it costs to repair structural wood rot caused by an infestation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the heavy North Carolina rain drive termites into my home?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, significantly. In the Triangle area, heavy spring and summer rains saturate the ground, forcing subterranean termites to move upward to avoid drowning. They often find \"dry ground\" inside your foundation or crawlspace. Our barrier is specifically designed to withstand NC's heavy rainfall, ensuring the protection remains bonded to the soil even during hurricane season."
+          }
+        }
+      ]
+    }
+    </script>
 {% endblock %}
 
 {% block body %}
@@ -28,10 +146,10 @@ permalink: "/termite-protection/"
         </div>
         <!--Background Color-->
         <picture class="cs-background">
-            <source media="(min-width: 1024px)" srcset="/assets/images/termites.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/termites.webp">
-            <source media="(max-width: 600px)" srcset="/assets/images/termites.webp">
-            <img fetchpriority="high" aria-hidden="true" decoding="async" src="/assets/images/termites.webp" alt="termites" width="275" height="132">
+            <source media="(min-width: 1024px)" srcset="/assets/images/termites-1600.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/termites-1600.webp">
+            <source media="(max-width: 600px)" srcset="/assets/images/termites-800.webp">
+            <img fetchpriority="high" aria-hidden="true" decoding="async" src="/assets/images/termites-1600.webp" alt="" width="275" height="132">
             </picture>
     </section>
                                     
@@ -56,10 +174,10 @@ permalink: "/termite-protection/"
                         <source media="(max-width: 600px)" srcset="/assets/images/termite-tubes.webp">
                         <!--Tablet and above Image-->
                         <source media="(min-width: 601px)" srcset="/assets/images/termite-tubes.webp">
-                        <img loading="lazy" decoding="async" src="/assets/images/termite-tubes.webp" alt="termite-tubes" width="413" height="240" aria-hidden="true">
+                        <img loading="lazy" decoding="async" src="/assets/images/termite-tubes.webp" alt="Termite mud tubes hanging in a dark crawlspace" width="413" height="240">
                     </picture>
                     <h3 class="cs-h3">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/magnifying-glass.svg" alt="magnifying-glass-icon" width="32" height="32" aria-hidden="true">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/magnifying-glass.svg" alt="" width="32" height="32" aria-hidden="true">
                         The Threat: Detection
                     </h3>
                     <p class="cs-item-text">
@@ -72,10 +190,10 @@ permalink: "/termite-protection/"
                         <source media="(max-width: 600px)" srcset="/assets/images/sanford-clay.webp">
                         <!--Tablet and above Image-->
                         <source media="(min-width: 601px)" srcset="/assets/images/sanford-clay.webp">
-                        <img loading="lazy" decoding="async" src="/assets/images/sanford-clay.webp" alt="sanford-clay" width="413" height="240" aria-hidden="true">
+                        <img loading="lazy" decoding="async" src="/assets/images/sanford-clay.webp" alt="Red North Carolina clay soil" width="413" height="240">
                     </picture>
                     <h3 class="cs-h3">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/termite-shield.svg" alt="icon" width="32" height="32" aria-hidden="true">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/termite-shield.svg" alt="" width="32" height="32" aria-hidden="true">
                         Advanced Termite Barriers
                     </h3>
                     <p class="cs-item-text">
@@ -88,10 +206,10 @@ permalink: "/termite-protection/"
                         <source media="(max-width: 600px)" srcset="/assets/images/for-sale-home.webp">
                         <!--Tablet and above Image-->
                         <source media="(min-width: 601px)" srcset="/assets/images/for-sale-home.webp">
-                        <img loading="lazy" decoding="async" src="/assets/images/for-sale-home.webp" alt="for-sale-home" width="413" height="240" aria-hidden="true">
+                        <img loading="lazy" decoding="async" src="/assets/images/for-sale-home.webp" alt="Single-story home with a well-kept lawn" width="413" height="240">
                     </picture>
                     <h3 class="cs-h3">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/document.svg" alt="document-icon" width="32" height="32" aria-hidden="true">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/document.svg" alt="" width="32" height="32" aria-hidden="true">
                         Transferable Termite Bonds
                     </h3>
                     <p class="cs-item-text">
@@ -114,7 +232,7 @@ permalink: "/termite-protection/"
                     <source media="(max-width: 600px)" srcset="/assets/images/termite-foundation.webp">
                     <!--Tablet and above Image-->
                     <source media="(min-width: 601px)" srcset="/assets/images/termite-foundation.webp">
-                    <img loading="lazy" decoding="async" src="/assets/images/termite-foundation.webp" alt="termite-foundation" width="324" height="467">
+                    <img loading="lazy" decoding="async" src="/assets/images/termite-foundation.webp" alt="Brick foundation wall along a lawn" width="324" height="467">
                 </picture>
             </div>
             <div class="cs-wrapper">
